@@ -1,0 +1,644 @@
+/* ----------------------------------------General---------------------------------------- */
+
+body {
+    background-color: #362421;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+.no_scroll {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------------------------------------Z-Index---------------------------------------- */
+
+.z_0 {
+    z-index: 0;
+}
+
+.z_1 {
+    z-index: 1;
+}
+
+.z_2 {
+    z-index: 2;
+}
+
+.z_3 {
+    z-index: 3;
+}
+
+.z_4 {
+    z-index: 4;
+}
+
+/* ----------------------------------------Background Circle---------------------------------------- */
+
+.bg_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg_circle {
+    position: fixed;
+    width: 50vw;
+    aspect-ratio: 1 / 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D2AE81;
+    border-radius: 50%;
+    opacity: 0.15;
+    filter: blur(125px);
+}
+
+/* ----------------------------------------Welcome Text---------------------------------------- */
+
+.welcome_container {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome_container h1 {
+    color: #FFF;
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 100px;
+    width: 885px;
+    margin: 0 auto;
+}
+
+.welcome_container h2 {
+    color: #C6C6C6;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    width: 685px;
+    margin: 0px auto 0 auto;
+}
+
+.welcome_container h3 {
+    color: #C6C6C6;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    width: 685px;
+    margin: 30px auto 0 auto;
+}
+
+/* ----------------------------------------Buttons---------------------------------------- */
+
+.button {
+    position: relative;
+    width: 255px;
+    height: 75px;
+    flex-shrink: 0;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 3px solid #D2AE81;
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+.button a {
+    font-family: "Outfit", sans-serif;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-transform: lowercase;
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+
+.button:hover {
+    border: 7.5px solid #D2AE81;
+}
+
+.button:hover a {
+    color: #D2AE81;
+}
+
+.menu_btn {
+    position: fixed;
+    top: calc(50% + 205px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ----------------------------------------Images---------------------------------------- */
+
+.image {
+    position: fixed;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+}
+
+.cafe {
+    width: 342px;
+    height: 342px;
+    top: 50%;
+    left: 50%;
+    transform: translate(236px, -302px);
+}
+
+.cake {
+    width: 313.5px;
+    height: 313.5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-545px, -140px) scaleX(-1) rotate(-10.88deg);
+}
+
+.cookies {
+    width: 275px;
+    height: 275px;
+    top: 50%;
+    left: 50%;
+    transform: translate(75px, 250px) rotate(-7.597deg);
+}
+
+.cafe_beans {
+    width: 202px;
+    height: 202px;
+    bottom: 8%;
+    right: -68px;
+    transform: scaleX(-1) rotate(-12.26deg);
+    opacity: 0.75;
+}
+
+.crumbles_1 {
+    width: 540px;
+    height: 360px;
+    transform: rotate(20.39deg);
+    aspect-ratio: 3/2;
+    left: -193px;
+    top: 5%;
+    opacity: 0.75;
+}
+
+.crumbles_2 {
+    width: 540px;
+    height: 360px;
+    transform: scaleY(-1) rotate(-159.612deg);
+    aspect-ratio: 3/2;
+    right: -235px;
+    top: -128px;
+    opacity: 0.75;
+}
+
+/* ----------------------------------------Navigation Bar---------------------------------------- */
+
+.navbar ul {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 51px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-decoration: none;
+    text-transform: lowercase;
+
+    transition: all 0.3s;
+}
+
+.navbar li a:hover {
+    color: #D2AE81;
+}
+
+.logo {
+    position: fixed;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0;
+    top: 55px;
+    left: 188px;
+}
+
+.navbar a.active {
+    color: #D2AE81;
+    border-bottom: 3px solid #D2AE81;
+    border-radius: 3px;
+}
+
+/* ----------------------------------------Language Dropdown---------------------------------------- */
+
+.lang_menu {
+    position: fixed;
+    margin: 0;
+    padding-bottom: 10px;
+    width: auto;
+    height: auto;
+    top: 55px;
+    right: 188px;
+}
+ 
+.selected_lang {
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-transform: capitalize;
+    line-height: 1.55;
+
+    transition: all 0.3s;
+}
+
+.selected_lang:hover {
+    color: #D2AE81;
+}
+
+.selected_lang:before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 28px;
+    background-image: url(https://flagsapi.com/DE/flat/32.png);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.lang_menu ul {
+    margin: 0;
+    padding: 0;
+    background-color: #362421;
+    border: 3px solid #D2AE81;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    overflow: hidden;
+}
+
+.lang_menu ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang_menu ul li a {
+    color: #FFF;
+    font-size: 17.5px;
+    font-weight: 400;
+    line-height: 27.5px;
+    width: 125px;
+    display: block;
+    padding: 5px;
+
+    transition: all 0.3s;
+}
+
+.lang_menu ul li a:before {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 28px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-image: url(https://flagsapi.com/DE/flat/32.png);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.lang_menu ul li a:hover {
+    color: #D2AE81;
+    background-color: #2f1f1d;
+}
+
+.lang_menu ul li a.de:before {
+    background-image: url(https://flagsapi.com/DE/flat/32.png);
+}
+
+.lang_menu ul li a.us:before {
+    background-image: url(https://flagsapi.com/US/flat/32.png);
+}
+
+.lang_menu ul li a.fr:before {
+    background-image: url(https://flagsapi.com/FR/flat/32.png);
+}
+
+.lang_menu ul li a.es:before {
+    background-image: url(https://flagsapi.com/ES/flat/32.png);
+}
+
+.lang_menu ul li a.tr:before {
+    background-image: url(https://flagsapi.com/TR/flat/32.png);
+}
+
+.lang_menu:hover ul {
+    display: block;
+}
+
+/* ----------------------------------------Cards---------------------------------------- */
+
+.card_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 160px;
+}
+
+.card_break {
+    margin-top: 0;
+}
+
+.card {
+    position: relative;
+    box-sizing: border-box;
+    background: #362421;
+    border-radius: 20px;
+    border: 3px solid #D2AE81;
+    width: 255px;
+    height: 375px;
+    margin: 7.5px;
+    overflow: hidden;
+}
+
+.card_image {
+    background-color: #404040;
+    height: 135px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card h1 {
+    margin: 0;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.card p {
+    margin: 0;
+    padding-left: 12.5px;
+    padding-left: 12.5px;
+    color: #C6C6C6;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.card .button {
+    position: absolute;
+    width: 203px;
+    height: 75px;
+    left: 50%;
+    transform: translate(-50%, 75px);
+    bottom: 97.5px;
+}
+
+.placeholder {
+    background-image: url("Images/Placeholder.jpeg");
+}
+
+.getränke {
+    background-image: url(Card_Images/Getränke.png);
+}
+
+.süßes {
+    background-image: url(Card_Images/Süßes.png);
+}
+
+.herzhaftes {
+    background-image: url(Card_Images/Herzhaftes.png);
+}
+
+.merchandise {
+    background-image: url(Card_Images/Merchandise.png);
+}
+
+.kaffee {
+    background-image: url(Card_Images/Kafee.png);
+}
+
+.tee {
+    background-image: url(Card_Images/Tee.png);
+}
+
+.kaltgetränke {
+    background-image: url(Card_Images/Kaltgetränke.png);
+}
+
+.kuchen {
+    background-image: url(Card_Images/Kuchen.png);
+}
+
+.gebäck {
+    background-image: url(Card_Images/Gebäck.png);
+}
+
+.sandwich {
+    background-image: url(Card_Images/Sandwich.png);
+}
+
+.warme_gerichte {
+    background-image: url(Card_Images/Warme_Gerichte.png);
+}
+
+.tassen {
+    background-image: url(Card_Images/Tassen.png);
+}
+
+.kaffeebohnen {
+    background-image: url(Card_Images/Kaffeebohnen.png);
+}
+
+.tshirt {
+    background-image: url(Card_Images/TShirts.png);
+}
+
+/* ----------------------------------------Speiseliste---------------------------------------- */
+
+.speiseliste_container {
+    position: absolute;
+    height: auto;
+    width: 704px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 211px;
+}
+
+.speiseliste_container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.speiseliste_container li {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.5px;
+    margin-bottom: 15px;
+}
+
+.item_name, .item_description, .item_price {
+    display: inline;
+}
+
+.item_description {
+    color: #C6C6C6;
+}
+
+.item_price {
+    float: right;
+}
+
+/* ----------------------------------------About Us---------------------------------------- */
+
+.header_container {
+    position: absolute;
+    height: 311px;
+    width: 100%;
+    top: 158px;
+}
+
+.about_us_image {
+    position: relative;
+    background-color: #404040;
+    height: 100%;
+    width: 100%;
+    background-image: url("Images/CafeLaden.jpg");
+    background-size: cover;
+    background-position-y: -350px;
+    opacity: 25%;
+}
+
+.header_container h1 {
+    position: absolute;
+    margin: 0;
+    padding: 0; 
+    color: #FFF;
+    text-align: center;
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 56px;
+}
+
+.about_us_container {
+    position: absolute;
+    width: 885px;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%);
+    top: 512px;
+}
+
+.about_us_container p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+/* ----------------------------------------Standort & Öffnungszeiten---------------------------------------- */
+
+.seperate_line {
+    position: absolute;
+    width: 15px;
+    height: 750px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 183px;
+    border-radius: 100px;
+    background: #D2AE81;
+}
+
+.standort_und_öffnungszeiten_container {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    left: calc(50% + 221px);
+    transform: translate(-50%);
+    top: 210px;
+}
+
+.standort_und_öffnungszeiten_container h1 {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 27.5px;
+}
+
+.standort_und_öffnungszeiten_container h2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 34px;
+    color: #C6C6C6;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.5px;
+}
+
+.standort_und_öffnungszeiten_container p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 122.5px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.5px;
+}
+
+.standort_und_öffnungszeiten_container .bold {
+    font-weight: 700;
+}
+
+.container_left {
+    text-align: right;
+    left: calc(50% - 221px);
+    transform: translate(-50%);
+}
+
+.container_left p {
+    top: 95px;
+}
